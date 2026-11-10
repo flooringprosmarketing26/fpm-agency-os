@@ -1,6 +1,18 @@
 # FPM Agency OS
 
-The rules for how Flooring Pros Marketing (FPM) runs process and fulfillment: priorities, pillar ladders, client work standards and team training. This repo is the master copy. The Claude Project "FPM Agency OS & Client Management" on the Team account syncs from it.
+The instructions and tools that Claude and FPM's agents run: skill files, the priority tool and, later, the AI front end that connects ClickUp, the Client Hub and reporting.
+
+## Where the master copy of each thing lives
+
+| What | Master copy |
+|---|---|
+| Processes, SOPs and rules the team reads | Google Drive |
+| Templates (docs, sheets, Canva) | Google Drive |
+| Skill files, the priority tool, agent code | This repo |
+
+Do not copy process docs or templates into this repo. Link to the Drive doc instead. Keeping the same thing in two places by hand is how documents drift apart. (Dan, Nov 10, 2026.)
+
+The Claude Project "FPM Agency OS & Client Management" reads the team's process docs straight from Google Drive. It does not need this repo for that.
 
 Scope is process and fulfillment. Client fees, payments and cost of delivery are in scope. Company cash flow, the CEO dashboard and the owners' partnership matters are not.
 
@@ -8,27 +20,18 @@ Scope is process and fulfillment. Client fees, payments and cost of delivery are
 
 | Folder | What goes in it |
 |---|---|
-| `00-foundation` | Who FPM, MHL and Flooring HQ are; the five client outcomes; the seven pillars; values; brand and copy rules; customer avatars |
-| `01-journey` | The six journey stages and their exit gates, the client's experience at each stage, onboarding |
-| `02-rules` | Operating principles, levels and account types, client health, scoring and guardrails, client communication standard, client requests |
-| `03-pillars` | One folder per pillar (P1 to P7): ladder, operating model, task list, quick scan, audit SOP, Unstuck Matrix |
-| `04-planning` | Priority rules, how to fill the 90-day plan, the Next 90 gameplan SOP, the monthly minimum |
-| `05-reporting` | Weekly, monthly and quarterly reporting, the weekly check system, quarterly reviews |
-| `06-sales` | Diagnosis to prescription, programs and levels |
-| `07-team` | Roles and lanes, org chart, accountability, training plan and one-pagers |
-| `08-templates` | Index of every template, with link and when to use it |
-| `09-accounts` | One file per account: type, level, fee, pillars, health, stage, focus areas, open items |
-| `11-decisions` | Decision log, conflict log, open decisions, rule-change log |
-| `12-tools` | Claude skills, dashboards, Client Hub, ClickUp setup |
+| `skills` | One folder per Claude skill: its SKILL.md and any files it needs. Each skill links to the Drive docs it follows instead of repeating them. |
+| `tools` | Code for the priority tool and, later, the AI front end |
 | `archive` | Replaced versions, each pointing to what replaced it |
 
 ## Rules for this repo
 
-1. When two files disagree, the newer decision wins. Log the conflict in `11-decisions`.
-2. Doc proposes rule changes; Dan approves them. Mark anything not yet approved as proposed.
-3. Write for the team in plain English. No em dashes in team-facing text.
-4. Replaced files move to `archive`; they are not deleted.
+1. Doc proposes changes and Dan approves them. Nothing goes into `main` without Dan's approval. Mark anything not yet approved as proposed.
+2. When an approved process changes in Drive, check every skill that uses it and update the skill if needed. Note the check in Doc's change log.
+3. Keep skill files short. Link to the process in Drive rather than copying it.
+4. Write in plain English. No em dashes in anything the team reads.
+5. Replaced files move to `archive`. They are not deleted.
 
-## Short versions for people
+## Where the team's docs are
 
-Doc's Drive folder, "FPM Priority Operational Project", holds the plain-language versions, starting with "00 Start Here".
+Doc's Drive folder, "FPM Priority Operational Project", starting with "00 Start Here".
